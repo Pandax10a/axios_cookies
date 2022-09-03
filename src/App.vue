@@ -2,6 +2,7 @@
   <div id="app">
     <display-selection></display-selection>
     <dog-button></dog-button>
+    <cat-button></cat-button>
   </div>
 </template>
 
@@ -10,6 +11,8 @@ import axios from "axios"
 
 import DogButton from '@/components/DogButton.vue'
 import DisplaySelection from '@/components/DisplaySelection.vue'
+import CatButton from '@/components/CatButton.vue'
+
 
 
 axios
@@ -17,7 +20,7 @@ export default {
   components: {
     DisplaySelection,
     DogButton,
-  
+    CatButton
   },
 };
 
