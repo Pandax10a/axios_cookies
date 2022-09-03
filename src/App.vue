@@ -1,19 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <display-selection></display-selection>
+    <dog-button></dog-button>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import axios from "axios"
 
+import DogButton from '@/components/DogButton.vue'
+import DisplaySelection from '@/components/DisplaySelection.vue'
+
+
+axios
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    DisplaySelection,
+    DogButton,
+  
+  },
+};
+
 </script>
 
 <style>
